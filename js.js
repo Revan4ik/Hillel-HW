@@ -1,3 +1,4 @@
+// Task 1
 var min = +prompt ("Введите число от 0 до 59");
 if (min >= 0 && min <= 14) {
     console.log('ваше число в 1 четверти');
@@ -10,7 +11,7 @@ if (min >= 0 && min <= 14) {
 } else {console.log('Вы ввели не правильное число')}
 
 
-
+// Task 2
  var a = '1';
  if (a === '1'){ 
     console.log('Верно');
@@ -25,7 +26,7 @@ if (min >= 0 && min <= 14) {
  } else console.log('Неверно');
 
 
-
+// Task 3
  var test = confirm('yes/no');
  if (test == false){
     console.log('Верно');
@@ -35,7 +36,7 @@ if (min >= 0 && min <= 14) {
 test == false ? console.log('Верно') : console.log('Неверно');
 
 
-
+// Task 4 
 var a = 5
 if (a > 0 && a < 5){
     console.log('Верно')
@@ -60,7 +61,7 @@ if (a > 0 && a < 5){
 }
 
 
-
+// Task 5
 var num = +prompt('Введите число от 1 до 4')
 if (num == 1){
     var result = 'зима'
