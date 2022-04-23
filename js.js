@@ -1,61 +1,82 @@
 //Task 1
-function Numbers(a,b){
-while(true){
-    a = +prompt('введите первое число');
-    if (!Number.isInteger(a)) {
-        alert ('первый ввод - не число');
-        return;
-}
-    b = +prompt('введите второе число')
-    if (!Number.isInteger(b)){
-    alert ('второй ввод - не число')
-    return
-}
-compare(a,b)
-}
-}
-function compare(a,b){
-    if (a < b){
-        alert('первое число меньше')
-    } else if ( a > b){
-        alert('второе число меньше')
-    } else {
-        alert("числа равны")
-    }
-}
-Numbers();
 
-
-
-
-//Task 2
-// var floor = +prompt ('введите количество этажей')
-// var entrance = +prompt ('введите количество подъездов')
-// var numbofflat = +prompt ('введите количество квартир на площадке')
-// var flat = +prompt ('введите номер квартиры')
-// function isCheck1(min1, max1, floor){
-//     return ((min1 && max1 && floor) && (min1 <= floor && max1 >= floor))
+// function Numbers(a,b){
+// while(true){
+//     a = +prompt('введите первое число');
+//     if (isNaN(a)) {
+//         alert ('первый ввод - не число');
+//         return;
 // }
-// if(isCheck1(1, 25, floor)){
-//     console.log('ok')
-// } else {console.log('ne ok')}
-// function isCheck2(min2, max2, entrance){
-//     return ((min2 && max2 && entrance) && (min2 <= entrance && entrance <= max2))
+//     b = +prompt('введите второе число')
+//     if (isNaN(b)){
+//     alert ('второй ввод - не число')
+//     return
 // }
-// if(isCheck2(1, 10, entrance)){
-//     console.log('ok')
-// } else {console.log('ne ok')}
-// function isCheck3(min3, max3, numbofflat){
-//     return ((min3 && max3 && numbofflat) && (min3 <= numbofflat && numbofflat <= max3))
+// compare(a,b)
 // }
-// if(isCheck3(1, 20, numbofflat)){
-//     console.log('ok')
-// } else {console.log('ne ok')}
-// yourentrance = Math.ceil(flat / (floor * numbofflat))
-// alert ('Ваш подъезд' + " " + yourentrance)
+// }
+// function compare(a,b){
+//     if (a < b){
+//         alert('первое число меньше')
+//     } else if ( a > b){
+//         alert('второе число меньше')
+//     } else {
+//         alert("числа равны")
+//     }
+// }
+// Numbers();
+
+// Task 2
+
+// function yourentrance() {
+//     function isCheck(min, max, value) {
+//       return (
+//         min && max && value && value >= min && value <= max
+//       );
+//     }
+  
+//     while (true) {
+//       floor = +prompt("Введите колличество этажей (1 - 25)");
+//       if (isCheck(1, 25, floor)) break;
+//       alert("Введите правильное значение");
+//     }
+  
+//     while (true) {
+//       entrance = +prompt("Введите колличество подъездов (1 - 10)");
+//       if (isCheck(1, 10, entrance)) break;
+//       alert("Введите правильное значение");
+//     }
+  
+//     while (true) {
+//       flat = +prompt(
+//         "Введите колличество квартир на лестничной площадке (01 - 20)"
+//       );
+//       if (isCheck(1, 20, flat)) break;
+//       alert("Введите правильное значение");
+//     }
+  
+//     var flatCount = floor * entrance * flat;
+  
+//     while (true) {
+//       var flatNumber = +prompt("Введите номер квартиры");
+//       if (flatNumber > flatCount || !flatNumber)
+//         alert("Вы ввели не допустимое значение");
+//       break;
+//     }
+  
+//     for (i = 1; i <= entrance; i++) {
+//       if (flatNumber <= floor * flat * i) {
+//         alert("Ваша квартира находится в подъезде " + i);
+//         break;
+//       }
+//     }
+//   }
+//   yourentrance();
 
 
-// //Task 3
+
+//Task 3
+
 // function isEven (Number){
 // return (Number % 2 === 0)
 // };
@@ -77,7 +98,8 @@ Numbers();
 
 
 //Task 4
-//     function check(){
+
+// function check (x1,x2,x3,x4,y1,y2,y3,y4){
 //     var x1 = +prompt('введите х1')
 //     var x2 = +prompt('введите х2')
 //     var x3 = +prompt('введите х3')
@@ -88,63 +110,33 @@ Numbers();
 //     var y3 = +prompt('введите y3')
 //     var y4 = +prompt('введите y4')
 
-//     point1 = [x1, y1];
-//     point2 = [x2, y2];
-//     point3 = [x3, y3];
-//     point4 = [x4, y4];
-
-//     var coordinates = [point1, point2, point3, point4];
-
-//     function isRectangular(points){
-//       var a1 = calcSideSize(points[0], points[1]);
-//       var b1 = calcSideSize(points[1], points[2]);
-
-//       var a2 = calcSideSize(points[2], points[3]);
-//       var b2 = calcSideSize(points[3], points[0]);
-
-//       var c = calcSideSize(points[2], points[0]);
-
-//       if (
-//           isRightTriangle(a1, b1, c)
-//           && isRightTriangle(a2, b2, c)
-//       ) {
-//         return alert('Фигура - прямоугольник')
-//       } else return alert('Не прямоугольник')
-//     };
-
-//     function calcSideSize (start, end) {
-//       let x1 = start[0];
-//       let y1 = start[1];
-//       let x2 = end[0];
-//       let y2 = end[1];
-//       return (Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
-//     };
-
-//     function isRightTriangle (a, b, c) {
-//       return a + b === c;
-//     };
-
-//     isRectangular(coordinates);
+//     function isRectangle(x1, x2, x3, x4, y1, y2, y3, y4) {
+//         return x1 === x4 && y1 === y2 && x2 === x3 && y3 === y4;
+//       }
+    
+//       isRectangle(x1, x2, x3, x4, y1, y2, y3, y4)
+//         ? alert("Фигура - прямоугольник")
+//         : alert("Не прямоугольник");
 // }
-// check()
+// check();
 
 
 
 // Task 5
-// function* Getsequence(start, step){
+
+// function Getsequence(start, step){
 //     start = start || 0;
 //     step = step || 1;
-//     while(true){
-//       yield start;
-//       start+=step;
+//     return function creategenerator(){
+//       return (start = start + step);
 //     }
 //   }
 
 //   function call() {
 //     var generator = Getsequence(10,3);
 
-//     alert(generator.next().value); // 10
-//     alert(generator.next().value); // 13
-//     alert(generator.next().value); // 16
+//     alert(generator()); // 13
+//     alert(generator()); // 16
+//     alert(generator()); // 19
 //   }
 //   call()
