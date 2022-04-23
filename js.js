@@ -1,30 +1,30 @@
 //Task 1
 
-// function Numbers(a,b){
-// while(true){
-//     a = +prompt('введите первое число');
-//     if (isNaN(a)) {
-//         alert ('первый ввод - не число');
-//         return;
-// }
-//     b = +prompt('введите второе число')
-//     if (isNaN(b)){
-//     alert ('второй ввод - не число')
-//     return
-// }
-// compare(a,b)
-// }
-// }
-// function compare(a,b){
-//     if (a < b){
-//         alert('первое число меньше')
-//     } else if ( a > b){
-//         alert('второе число меньше')
-//     } else {
-//         alert("числа равны")
-//     }
-// }
-// Numbers();
+function Numbers(a,b){
+while(true){
+    a = +prompt('введите первое число');
+    if (isNaN(a)) {
+        alert ('первый ввод - не число');
+        return;
+}
+    b = +prompt('введите второе число')
+    if (isNaN(b)){
+    alert ('второй ввод - не число')
+    return
+}
+compare(a,b)
+}
+}
+function compare(a,b){
+    if (a < b){
+        alert('первое число меньше')
+    } else if ( a > b){
+        alert('второе число меньше')
+    } else {
+        alert("числа равны")
+    }
+}
+Numbers();
 
 // Task 2
 
