@@ -141,10 +141,10 @@ Numbers();
 //   }
 
 //   function call() {
-//     var generator = Getsequence(0,1);
+//     var generator = Getsequence(10,3);
 
-//     alert(generator.next().value); // 0
-//     alert(generator.next().value); // 1
-//     alert(generator.next().value); // 2
+//     alert(generator.next().value); // 10
+//     alert(generator.next().value); // 13
+//     alert(generator.next().value); // 16
 //   }
 //   call()
