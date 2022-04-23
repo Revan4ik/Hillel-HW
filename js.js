@@ -1,39 +1,34 @@
-// // //Task 1
-// // function Numbers(a,b){
-// // while(true){
-// //     a = +prompt('введите первое число');
-// //     if (!Number.isInteger(a)) {
-// //         alert ('первый ввод - не число');
-// //         return;
-// // }
-// //     b = +prompt('введите второе число')
-// //     if (!Number.isInteger(b)){
-// //     alert ('второй ввод - не число')
-// //     return
-// // }
-// // compare(a,b)
-// // }
-// // }
-// // function compare(a,b){
-// //     if (a < b){
-// //         alert('первое число меньше')
-// //     } else if ( a > b){
-// //         alert('второе число меньше')
-// //     } else {
-// //         alert("числа равны")
-// //     }
-// // }
-// Numbers();
+//Task 1
+function Numbers(a,b){
+while(true){
+    a = +prompt('введите первое число');
+    if (!Number.isInteger(a)) {
+        alert ('первый ввод - не число');
+        return;
+}
+    b = +prompt('введите второе число')
+    if (!Number.isInteger(b)){
+    alert ('второй ввод - не число')
+    return
+}
+compare(a,b)
+}
+}
+function compare(a,b){
+    if (a < b){
+        alert('первое число меньше')
+    } else if ( a > b){
+        alert('второе число меньше')
+    } else {
+        alert("числа равны")
+    }
+}
+Numbers();
 
 
 
 
 //Task 2
-// var maxfloor = 25;
-// var maxentrance = 10;
-// var maxnumbofflat = 20;
-// var yourentrance = ''
-// var yourfloor = ''
 // var floor = +prompt ('введите количество этажей')
 // var entrance = +prompt ('введите количество подъездов')
 // var numbofflat = +prompt ('введите количество квартир на площадке')
@@ -57,7 +52,7 @@
 //     console.log('ok')
 // } else {console.log('ne ok')}
 // yourentrance = Math.ceil(flat / (floor * numbofflat))
-// console.log('Ваш подъезд' + " " + yourentrance)
+// alert ('Ваш подъезд' + " " + yourentrance)
 
 
 // //Task 3
@@ -81,8 +76,7 @@
 
 
 
-// //Task 4
-//     var x1,x2,x3,x4,y1,y2,y3,y4;
+//Task 4
 //     function check(){
 //     var x1 = +prompt('введите х1')
 //     var x2 = +prompt('введите х2')
@@ -136,7 +130,7 @@
 
 
 
-// // Task 5
+// Task 5
 // function* Getsequence(start, step){
 //     start = start || 0;
 //     step = step || 1;
