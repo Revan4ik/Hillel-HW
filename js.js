@@ -1,3 +1,13 @@
+//Task 1
 
-var name = prompt ("What is your name?")
-alert("Hello, " +name +'! How are you?')
+function MakePassword(password){
+    return function Passwordvalid(input){
+        return input === password;
+    };
+}
+var test = MakePassword('qqq321321');
+console.log('valid password =>', test('qqq321321'));
+console.log('not valid password =>', test('qqqqqq'));
+
+//Task 2
+
