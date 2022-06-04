@@ -5,8 +5,7 @@ var priceInput = productForm.price;
 var measureInput = productForm.measure;
 var linkInput = productForm.link;
 
-// проверка на Caps Lock для input/textarea
-
+//проверяем на Caps-lock
 function capitalazeFirstLetters(str) {
   return str.replace(/([A-Z]|[А-ЯЁ])[A-ZА-ЯЁ]{1,}/g, function ($1) {
     var resultStr = $1.charAt(0).toUpperCase() + $1.substr(1).toLowerCase();
@@ -37,7 +36,7 @@ measureInput.addEventListener("change", function (e) {
 });
 
 priceInput.addEventListener("change", function (e) {
-  var Price = /\d*(.|,)В\d{2}/;
+  var Price = /\d*(.|,)\d{2}/;
   var resultPrice = e.target.value.match(Price) ;
   console.log(resultPrice)
     e.target.value = resultPrice
