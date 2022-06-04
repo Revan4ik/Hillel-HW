@@ -20,7 +20,7 @@ console.log(str4 + " " + 'result => ' + reg3.test(str4));
 //Task4
 var str5 = 'Extra   spaces';
 var str6 = 'Sentence.   Sentence.'
-var reg4 = /(   )/;
-var reg5 = /(.   )/;
+var reg4 = / +/g;
+var reg5 = /\. +/g;
 console.log(str5 + " " + '=>' + " " + str5.replace(reg4, ' '))
 console.log(str6 + " " + '=>' + " " + str6.replace(reg4, '  '))
