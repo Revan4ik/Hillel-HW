@@ -11,11 +11,23 @@ var res2 = str2.match(reg2)
 console.log('Task2 result => ' + res2)
 
 //Task3
-var str3 = '2012/09/18 12:10';
-var str4 = '2013/09/09 09:09'
-var reg3 = /^((1[0-9][0-9][0-9])|((200[0-9])|(201[0-2])))/;
-console.log(str3 + " " + 'result => ' + reg3.test(str3));
-console.log(str4 + " " + 'result => ' + reg3.test(str4));
+function reg3() {
+    var str3 = "2012/09/18 12:10"; // true
+    var str4 = "2013/09/09 09:09"; // false
+    var reg3 =
+      /^([1000-2012]{4})\/[0-1][0-9]\/[0-3][0-9]\s[0-2][0-9]\:[0-5][0-9]/g;
+    return console.log('2012/09/18 12:10' + " " + '=>' + " " + reg3.test(str3)
+    + "\n" + '2013/09/09 09:09' + " " + '=>' + " " + reg3.test(str4));
+  }
+  reg3();
+// function hometask3() {
+//     var string1 = "2012/09/18 12:10"; // true
+//     var string2 = "2013/09/09 09:09"; // false
+//     var regex =
+//       /^([1000-2012]{4})\/[0-1][0-9]\/[0-3][0-9]\s[0-2][0-9]\:[0-5][0-9]/g;
+//     return  console.log(regex.test(string1));
+//   }
+//   hometask3();
 
 //Task4
 var str5 = 'Extra   spaces';
