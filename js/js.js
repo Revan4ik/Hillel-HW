@@ -20,15 +20,7 @@ function reg3() {
     + "\n" + '2013/09/09 09:09' + " " + '=>' + " " + reg3.test(str4));
   }
   reg3();
-// function hometask3() {
-//     var string1 = "2012/09/18 12:10"; // true
-//     var string2 = "2013/09/09 09:09"; // false
-//     var regex =
-//       /^([1000-2012]{4})\/[0-1][0-9]\/[0-3][0-9]\s[0-2][0-9]\:[0-5][0-9]/g;
-//     return  console.log(regex.test(string1));
-//   }
-//   hometask3();
-
+  
 //Task4
 var str5 = 'Extra   spaces';
 var str6 = 'Sentence.   Sentence.'
