@@ -5,9 +5,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const production = process.env.NODE_ENV === "production";
 
 module.exports = {
-    externals: {
-        moment: 'moment'
-    },
   mode: production ? "production" : "development",
   entry: "./src/index.js",
   output: {

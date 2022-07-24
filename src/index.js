@@ -81,8 +81,6 @@ container.innerHTML = `
 </div>
 `;
 const dataTable = new MDCDataTable(document.querySelector(".mdc-data-table"));
-console.log(dataTable);
-
 students.forEach((student) => {
   const tableRow = document.createElement("tr");
   tableRow.className = "mdc-data-table__row";
@@ -105,10 +103,6 @@ students.forEach((student) =>{
     rating.push(student.rating) 
     names.push(student.name) 
 })
-
-rating.sort(function(a,b){
-    return a - b;
-});
 const chart = new Chart(ctx, {
     type: 'bar',
     data: {
